@@ -59,14 +59,16 @@ button {
 .app-shell {
   max-width: 480px;
   margin: 0 auto;
-  min-height: 100dvh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   background: var(--bg);
+  overflow: hidden;
 }
 
 .app-content {
   flex: 1;
+  min-height: 0;
   overflow-y: auto;
   padding-bottom: 8px;
 }
@@ -268,7 +270,7 @@ button {
   border: none;
   outline: none;
   background: none;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   color: oklch(25% 0.01 250);
   width: 100%;
@@ -764,7 +766,7 @@ button {
   background: var(--neutral-soft);
   border-radius: 10px;
   padding: 8px 10px;
-  font-size: 14px;
+  font-size: 16px;
   color: oklch(25% 0.01 250);
   width: 100%;
 }
